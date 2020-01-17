@@ -65,47 +65,4 @@ describe('Test Counter Container', () => {
       expect(counterContainer).toMatchSnapshot()
     })
   })
-
-  //   describe('Test Click Btn', () => {
-  //     let addBtn: any = null
-  //     let subBtn: any = null
-  //     beforeAll(() => {
-  //       //   const oldCouter = counterContainer.state().counter
-  //       //   counterContainer.instance().handlerAddCounter(oldCouter)
-  //       const allBtn = counterContainer.find('button')
-  //       console.log(`allBtn`, allBtn)
-  //       addBtn = allBtn.at(0)
-  //       subBtn = allBtn.at(1)
-  //     })
-  //     describe('test simulate click add button', () => {
-  //       beforeAll(() => {
-  //         addBtn.simulate('click')
-  //         // counterContainer.update()
-  //         // console.log(`addBtn.simulate('click')`)
-  //       })
-  //       test('counter must be 1', () => {
-  //         expect(counterContainer.state().counter).toEqual(1)
-  //       })
-  //       test('test snapshot add state', () => {
-  //         expect(counterContainer).toMatchSnapshot()
-  //       })
-  //     })
-  //     describe('test simulate click sub button', () => {
-  //       beforeAll(() => {
-  //         console.log(`beforeAll counter`, counterContainer.state().counter)
-  //         //subBtn.simulate('click')
-  //         // counterContainer.update()
-  //         // console.log(`subBtn.simulate('click')`)
-  //         // console.log(`counterContainer`, counterContainer.html())
-  //       })
-  //       test('counter must be 0', () => {
-  //         console.log(`counter1`, counterContainer.state().counter)
-
-  //         subBtn.simulate('click')
-  //         console.log(`counterContainer`, counterContainer.html())
-  //         console.log(`counter2`, counterContainer.state().counter)
-  //         expect(0).toEqual(0)
-  //       })
-  //     })
-  //   })
 })
