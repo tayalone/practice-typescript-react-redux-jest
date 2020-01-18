@@ -54,6 +54,12 @@
     "ts-jest": "^24.3.0"
   },
   "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/App.tsx",
+      "<rootDir>/src/index.tsx",
+      "<rootDir>/src/serviceWorker.ts",
+      "<rootDir>/src/Stores/rootReducer.ts"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]

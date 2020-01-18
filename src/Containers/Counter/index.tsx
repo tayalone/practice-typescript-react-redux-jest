@@ -22,7 +22,6 @@ class Conuter extends React.Component<
   }
 
   handlerSubCounter = (oldValue: number) => {
-    console.log(`handlerSubCounter`, oldValue)
     this.setState({ counter: oldValue - 1 })
   }
 
