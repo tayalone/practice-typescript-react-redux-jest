@@ -31,18 +31,4 @@ describe('Test BookList Container', () => {
     bookListContainer.update()
     expect(bookListContainer.state().title).toEqual('done')
   })
-  // describe('test situation 1', () => {
-  //   beforeEach(() => {
-  //     console.log(`beforeEach 1`)
-  //   })
-  //   test('test 1 - 1', () => {})
-  //   test('test 1 - 2', () => {})
-  // })
-  // describe('test situation 2', () => {
-  //   beforeEach(() => {
-  //     console.log(`beforeEach 2`)
-  //   })
-  //   test('test 2 - 1', () => {})
-  //   test('test 2 - 2', () => {})
-  // })
 })
