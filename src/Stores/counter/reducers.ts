@@ -1,3 +1,5 @@
+import update from 'immutability-helper'
+
 import {
   counterStateInterface,
   counterActionTypes,
@@ -8,7 +10,7 @@ import {
 /**
  * @description -------- Action Section -------------------
  */
-export function addCounter(oldCouter: number) {
+export const addCounter = (oldCouter: number) => {
   const newCouter = oldCouter + 1
   return {
     type: COUNTER_ADD,
@@ -16,7 +18,7 @@ export function addCounter(oldCouter: number) {
   }
 }
 
-export function subCounter(oldCouter: number) {
+export const subCounter = (oldCouter: number) => {
   const newCouter = oldCouter - 1
   return {
     type: COUNTER_SUB,
@@ -28,7 +30,7 @@ export function subCounter(oldCouter: number) {
  * @description -------- InitialState Section -------------------
  */
 const initialState: counterStateInterface = {
-  counter: 3
+  counter: 0
 }
 
 /**
@@ -41,11 +43,11 @@ export const reducer = (
   switch (action.type) {
     case COUNTER_ADD: {
       const { counter } = action.payload
-      return { ...state, counter }
+      return update(state, { counter: { $set: counter } })
     }
     case COUNTER_SUB: {
       const { counter } = action.payload
-      return { ...state, counter }
+      return update(state, { counter: { $set: counter } })
     }
     default:
       return state

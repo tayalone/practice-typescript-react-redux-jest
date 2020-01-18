@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { addCounter, subCounter } from '../../Stores/counter/reducers'
+import { Link } from 'react-router-dom'
 interface Props {
   counter: number
   handlerClickAddBtn: (oldCounter: number) => void
