@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { addCounter, subCounter } from '../../Stores/counter/actions'
+import { addCounter, subCounter } from '../../Stores/counter/reducers'
 interface Props {
   counter: number
   handlerClickAddBtn: (oldCounter: number) => void
