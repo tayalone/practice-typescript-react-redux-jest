@@ -11,6 +11,9 @@
 # production
 /build
 
+#component snapshot
+__snapshots__/
+
 # misc
 .DS_Store
 .env.local
