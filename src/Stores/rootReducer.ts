@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import counterReducer from './couter/reducers'
-const RootReducer = combineReducers({ couter: counterReducer })
+import counterReducer from './counter/reducers'
+const RootReducer = combineReducers({ counterState: counterReducer })
 
 export default RootReducer
